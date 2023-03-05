@@ -1,0 +1,32 @@
+import s from './Projects.module.scss';
+import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
+import { PROJECTS } from '../../constants/projects';
+import ProjectCard from './ProjectCard/ProjectCard';
+
+const Projects = () => {
+  return (
+    <BaseLayout>
+      <div className={s.content}>
+        <h1 className={s.title}>
+          OLEKSANDR <strong className={s.purple}>FILO</strong>
+        </h1>
+
+        <h2 className={s.subtitle}>
+          <strong className={s.purple}>Portfolio</strong>
+        </h2>
+
+        <p className={s.subtitle}>
+          Here are a few projects I've worked on recently.
+        </p>
+
+        <ul className={s.projects}>
+          {PROJECTS.map((props) => (
+            <ProjectCard key={props.id} {...props} />
+          ))}
+        </ul>
+      </div>
+    </BaseLayout>
+  );
+};
+
+export default Projects;
