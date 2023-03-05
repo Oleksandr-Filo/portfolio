@@ -5,8 +5,8 @@ import ModalProjectCard from '../scenes/Projects/ModalProjectCard/ModalProjectCa
 const Projects = lazy(() => import('../scenes/Projects/Projects'));
 
 export const routes = {
-  PROJECTS: '/',
-  PROJECT: '/:id',
+  PROJECTS: '/portfolio',
+  PROJECT: '/portfolio/:id',
 };
 
 const BaseRoutes = () => {

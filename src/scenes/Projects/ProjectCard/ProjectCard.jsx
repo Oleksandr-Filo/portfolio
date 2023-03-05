@@ -9,7 +9,7 @@ const ProjectCard = ({ id, image, title, description }) => {
     <li className={s.card}>
       <div className={s.cardWrapper}>
         <Link
-          to={`/${id}`}
+          to={`/portfolio/${id}`}
           state={{ background: location }}
         >
           <LazyLoadImage
