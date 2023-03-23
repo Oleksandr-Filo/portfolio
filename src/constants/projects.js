@@ -1,6 +1,27 @@
 export const PROJECTS = [
   {
     id: '1',
+    title: 'File explorer for user\'s Dropbox account',
+    description:
+      'With this application, the user can get access to files and folders stored in the user\'s Dropbox account. It is possible to navigate through existing folders and open files.',
+    image: {
+      src: 'https://i.paste.pics/95d501222e900116f4955cb13e07f2f8.png',
+    },
+    links: {
+      site: 'https://oleksandr-filo.github.io/basic-file-explorer',
+      repo: 'https://github.com/Oleksandr-Filo/basic-file-explorer',
+    },
+    technologies: [
+      '#React (React Context, React Router)',
+      '#TypeScript',
+      '#Material UI',
+      '#SCSS',
+      '#BEM',
+      '#Dropbox API',
+    ],
+  },
+  {
+    id: '2',
     title: 'The median prime number(s) getter App',
     description:
       'APP which allow you input a number and receive the median prime number(s) of the set of prime numbers less than entered value.',
@@ -25,7 +46,7 @@ export const PROJECTS = [
     ],
   },
   {
-    id: '2',
+    id: '3',
     title: 'React ToDo App',
     description:
       'APP for managing your ToDos. Enter your email and name for registration and you will be able to manage your ToDos at anytime from different devices.',
@@ -43,7 +64,7 @@ export const PROJECTS = [
     ],
   },
   {
-    id: '3',
+    id: '4',
     title: 'Kickstarter',
     description:
       "Responsive landing page for Kickstarter",
@@ -64,7 +85,7 @@ export const PROJECTS = [
     ],
   },
   {
-    id: '4',
+    id: '5',
     title: 'BOSE',
     description:
       'Responsive BOSE landing page',
